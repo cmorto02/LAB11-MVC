@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h1>Results</h1>
+
+<body>
+@foreach (var value in Model) {
+    <div>
+        <p>Description: @value.Description</p>
+        <p>Country: @value.Country, Region: @value.Region_1</p>
+        <p>Score: @value.Points    Price: @value.Price</p>
+    </div>
+} 
+</body>
